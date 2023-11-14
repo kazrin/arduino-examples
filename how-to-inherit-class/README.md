@@ -11,7 +11,6 @@
 │   │   ├── WiFiConnection.cpp
 │   │   └── WiFiConnection.h
 │   └── config
-│       ├── config.cpp
 │       └── config.h
 ├── platformio.ini
 ├── src
