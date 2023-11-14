@@ -21,4 +21,4 @@
 ```
 
 `main.cpp` loads `WiFiConnection` class and make it connect, check the connection and re-connect.
-Before building, please replace `ssid` and `password` in `./lib/config/config.h`
+Before building, please replace `ssid` and `password` in `./include/config.h`
