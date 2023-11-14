@@ -1,4 +1,4 @@
-# How to create and use class
+# How to inherit class
 
 ```
 .
@@ -7,9 +7,12 @@
 │   └── README
 ├── lib
 │   ├── README
-│   └── TwoNumbers
-│       ├── TwoNumbers.cpp
-│       └── TwoNumbers.h
+│   ├── WiFConnection
+│   │   ├── WiFiConnection.cpp
+│   │   └── WiFiConnection.h
+│   └── config
+│       ├── config.cpp
+│       └── config.h
 ├── platformio.ini
 ├── src
 │   └── main.cpp
@@ -17,4 +20,5 @@
     └── README
 ```
 
-`main.cpp` loads `TwoNumbers` class and make it add, subtract, multiply and divide.
+`main.cpp` loads `WiFiConnection` class and make it connect, check the connection and re-connect.
+Before building, please replace `ssid` and `password` in `./lib/config/config.h`

@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "WiFiConnection.h"
-
+#include "config.h"
+ 
 std::string ssid = "";
 std::string pass = "";
 WiFiConnection wifiConnection(ssid, pass);
@@ -8,9 +9,7 @@ WiFiConnection wifiConnection(ssid, pass);
 void setup() {
   Serial.begin(115200);
 
-  std::string ssid = "F660A-gphA-G";
-  std::string pass = "zfyt9z5h";
-  wifiConnection = WiFiConnection(ssid, pass);
+  wifiConnection = WiFiConnection(WiFiCredentials::ssid, WiFiCredentials::pass);
   wifiConnection.connect();
 }
 
